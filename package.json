@@ -1,0 +1,44 @@
+{
+  "name": "jwt-secret-gen",
+  "version": "1.0.0",
+  "description": "Generate cryptographically secure JWT secrets(interactively or via CLI flags). Works with HS256, HS384, HS512.",
+  "author": "Olushola O. (GeekyGeeky)",
+  "license": "MIT",
+  "keywords": [
+    "jwt",
+    "secret",
+    "generator",
+    "security",
+    "cli",
+    "env",
+    "dotenv",
+    "bun",
+    "hs256",
+    "hs384",
+    "hs512",
+    "token",
+    "auth"
+  ],
+  "type": "module",
+  "bin": {
+    "jwt-secret-gen": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target node --format esm",
+    "dev": "bun run src/index.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
