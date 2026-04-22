@@ -72,7 +72,7 @@ function prompt(question: string): string {
   process.stdout.write(question);
   const buf = Buffer.alloc(1024);
   const n = require("fs").readSync(0, buf, 0, buf.length, null);
-  return buf.slice(0, n).toString().trim();
+  return buf.subarray(0, n).toString().trim();
 }
 
 function confirm(question: string, defaultYes = false): boolean {
