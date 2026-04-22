@@ -1,6 +1,12 @@
-# 🔐 jwt-secret-gen
+# jwt-secret-gen
 
-Generate cryptographically secure JWT secrets — interactively or fully automated via flags.
+[./sample.png]
+
+(./sample.png)
+
+![Sample image](sample.png)
+
+Generate cryptographically secure JWT secrets(interactively or fully automated via flags).
 
 Works anywhere: `bunx`, `npx`, `pnpm dlx`, `yarn dlx`, or installed globally.
 
